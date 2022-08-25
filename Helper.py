@@ -89,7 +89,7 @@ class BaseClass(hass.Hass):
                 id = self._getid(statedict, entity)
                 state = self.get_state(entity)
                 self._log_debug("Person %s is %s" % (id, state))
-                if state == "home":
+                if state.lower() == "home":
                     anyonehome = True
         return anyonehome
 
