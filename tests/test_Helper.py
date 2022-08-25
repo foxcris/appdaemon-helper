@@ -1,6 +1,6 @@
 import pytest
 from datetime import datetime, timedelta, time
-from Helper import BaseClass
+from helper.Helper import BaseClass
 import logging
 
 class TestHelper:
